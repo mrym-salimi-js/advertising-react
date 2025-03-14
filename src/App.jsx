@@ -37,7 +37,7 @@ const App = () => {
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
         <QueryClientProvider client={queryClient}>
-          <BrowserRouter basename='/Advertising-react'>
+          <BrowserRouter basename='/advertising-react'>
             <Suspense fallback={<PageLoading />}>
               <Routes>
                 <Route path='/' element={<Home />} />
